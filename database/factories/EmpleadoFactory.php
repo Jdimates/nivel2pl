@@ -1,0 +1,21 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Empleado;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+class EmpleadoFactory extends Factory
+{
+    protected $model = Empleado::class;
+
+    public function definition()
+    {
+        return [
+			'Nombres' => $this->faker->name,
+			'Apellido' => $this->faker->name,
+			'Identificacion' => $this->faker->name,
+        ];
+    }
+}
